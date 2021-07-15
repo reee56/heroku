@@ -1,0 +1,30 @@
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: poppins;
+}
+
+/*class global */
+.btn-rpl{
+    background-color: darkgray;
+    border: solid 2px darkslategray ;
+    color: darkslategray ;
+    border-radius: 10px;
+}
+.nav-link:hover {
+    background-color: grey;
+}
+.card-body-icon{
+    position: absolute;
+    z-index: 0;
+    top: 25px;
+    right: 6px;
+    opacity: 0.4;
+    font-size: 90px;
+}
+.card{
+    position: relative;
+}

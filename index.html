@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b721bc777d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-datetimepicker.min.css">
+    <title>Skripsi Vere</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+        <a class="navbar-brand" href="#"><b>PARTICULATE MATTER</b></a>
+        <buton class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </buton>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <div class="icon ml-5 p-2 navbar-brand">
+                <h5>
+                  <i class="fas fa-envelope mr-3" data-toggle="tooltip" title="Email"></i>
+                  <i class="fab fa-instagram mr-3" data-toggle="tooltip" title="Instagram"></i>
+                </h5>
+              </div>
+          </ul>
+        </div>
+        </div>
+      </nav>
+      <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>PEMODELAN PRAKIRAAN PM10</h1>
+        <h2>Kota Palembang</h2> 
+        <div class="col-md">
+          <img src="img/bmkg.png" alt="BMKG">
+        </div>
+      </div>
+
+      <div class="container" style="margin-top:30px">
+        <div class="row">
+          <div class="col-sm-4">
+           <p>
+            <div class="embed-responsive embed-responsive-item"></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.4454424353!2d104.69292390833691!3d-2.95479490605447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e8fc27a3e3%3A0x3039d80b220d0c0!2sPalembang%2C%20Kota%20Palembang%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1613273276609!5m2!1sid!2sid" width="250" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           </p>
+
+            <h4>Indeks Nilai ISPU</h4>
+            <h6 class="bg-success"><i class="far fa-grin-beam"></i> 0 - 50 µgram/m3 <br><b>Baik</b></h6>
+            <h6 class="bg-primary"><i class="far fa-smile"></i> 51 - 150 µgram/m3 <br><b>Sedang</b></h6>
+            <h6 class="bg-warning"><i class="far fa-meh"></i> 151 - 350 µgram/m3 <br><b>Tidak Sehat</b></h6>
+            <h6 class="bg-danger"><i class="far fa-frown"></i> 351 - 420 µgram/m3 <br><b>Sangat Tidak Sehat</b></h6>
+            <h6 class="bg-secondary"><i class="far fa-sad-cry"></i> >420 µgram/m3 <br><b>Berbahaya</b></h6>
+            <hr class="d-sm-none">
+          </div>
+          <div class="col-sm-8">
+            <h2>Prakiraan PM10</h2>
+              <p>Tanggal</p>
+              <div class="form-group">
+                <div class="input-group date" id="datetimepicker">
+                    <input type="text" class="form-control">
+                    <div class="input-group-addon input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-calendar"></i></span>
+                    </div>
+                </div>
+                <br>
+                <p> Hasil Prakiraan PM10 Menggunakan Jaringan Saraf Tiruan</p>
+                <img src="img/tabel.jpg" alt="tabel">
+            </div>
+          </div>
+            
+            
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <script src="bootstrap-datetimepicker.min.js"></script>
+    <script>
+      $(function () {
+          $.extend(true, $.fn.datetimepicker.defaults, {
+              icons: {
+                  time: 'far fa-clock',
+                  date: 'far fa-calendar',
+                  up: 'fas fa-arrow-up',
+                  down: 'fas fa-arrow-down',
+                  previous: 'fas fa-chevron-left',
+                  next: 'fas fa-chevron-right',
+                  today: 'far fa-calendar-check-o',
+                  clear: 'far fa-trash',
+                  close: 'far fa-times'
+              }
+          });
+      });
+      </script>
+      <script type="text/javascript">
+          $(function () {
+              $('#datetimepicker').datetimepicker();
+          });
+      </script>
+  </body>
+</html>
